@@ -16,6 +16,14 @@
 	color: rgba(255, 255, 255, 0.4);
 }
 
+ 
+.grayscale {
+    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+}
+
 a:focus,
 button:focus {
 	outline: none !important;
@@ -24,7 +32,14 @@ button:focus {
 button::-moz-focus-inner {
 	border: 0;
 }
-
+.envio{
+	border-radius: 25px;
+	box-shadow: 7px 5px 4px 0px rgb(179 219 54 / 84%);
+}
+.envio:hover{
+	border-radius: 15px;
+	box-shadow: 7px 5px 8px 0px rgb(19 21 54 / 44%);
+}
 *:focus {
 	outline: none;
 }
